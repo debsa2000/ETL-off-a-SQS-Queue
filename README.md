@@ -13,7 +13,6 @@ I have used Python programming language to complete this exercise.
 * In each iteration we extract the message body -> parse JSON data into a dataframe -> mask IP and Device ID fields with SHA256 hash and store the updated dataframe in PostgreSQL user_logins table in Postgresql db.
 * After a batch of messages is processed and stored in the database, we delete them from the queue and poll for the next batch of messages.
 * We stop the process after all the messages in the queue have been processed successfully.
-* 
 
 ### Workflow diagram
 
