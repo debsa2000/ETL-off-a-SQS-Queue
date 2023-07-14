@@ -7,6 +7,7 @@ Email: debsa2000@gmail.com
 I have used Python programming language to complete this exercise.
 
 
+
 ### Overview
 
 * This data pipeline is made to run in an isolated container in which it polls messages from a standard AWS SQS queue in batches of 10 messages per iteration.
@@ -14,11 +15,16 @@ I have used Python programming language to complete this exercise.
 * After a batch of messages is processed and stored in the database, we delete them from the queue and poll for the next batch of messages.
 * We stop the process after all the messages in the queue have been processed successfully.
 
+
+
 ### Workflow diagram
 
 <img src="https://user-images.githubusercontent.com/32909781/216669908-9522ee92-8f24-476c-bc9d-938920c7972d.png">
 
+
+
 ### How to Run
+
 #### Pre-requisites
 * [install docker](https://docs.docker.com/get-docker/)
 * [install postgresql](https://www.postgresql.org/download/)
@@ -45,6 +51,8 @@ I have used Python programming language to complete this exercise.
  $ psql -d postgres -U postgres -p 5432 -h localhost -W
 postgres=# select * from user_logins; 
 ```
+
+
 
 ### Questions
 
@@ -80,6 +88,7 @@ postgres=# select * from user_logins;
 - The provided table schema is correct, and the necessary table already exists in the Postgres database.
 - The masking algorithm and approach mentioned (consistent hash function) are acceptable for the purpose of this exercise.
 - The provided Docker images with test data are set up correctly and can be used without modification.
+
 
 
 ### Next Steps
