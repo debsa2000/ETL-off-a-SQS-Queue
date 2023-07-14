@@ -3,9 +3,9 @@
 ```
 Author: Debanjali Saha
 Email: debsa2000@gmail.com
-
 ```
-I have used Python to complete this exercise.
+I have used Python programming language to complete this exercise.
+
 
 ### Overview
 
@@ -13,14 +13,7 @@ I have used Python to complete this exercise.
 * In each iteration we extract the message body -> parse JSON data into a dataframe -> mask IP and Device ID fields with SHA256 hash and store the updated dataframe in PostgreSQL user_logins table in Postgresql db.
 * After a batch of messages is processed and stored in the database, we delete them from the queue and poll for the next batch of messages.
 * We stop the process after all the messages in the queue have been processed successfully.
-
-Answers to questions while developing the solution:
- ● How will you read messages from the queue?
- ● What type of data structures should be used?
- ● How will you mask the PII data so that duplicate values can be identified?
- ● What will be your strategy for connecting and writing to Postgres?
- ● Where and how will your application run?
-
+* 
 
 ### Workflow diagram
 
